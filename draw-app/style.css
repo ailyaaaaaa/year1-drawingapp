@@ -1,0 +1,115 @@
+/* set default styles for html and body */
+html, body {
+	margin: 0;
+	height: 100%;
+  }
+  
+  /* styles for the header */
+  .header {
+	grid-area: header;
+	font-family: Arial, sans-serif;
+	background-color: #ffd3e5;
+	color: #fff;
+	padding: 10px;
+	justify-content: space-between;
+	font-size: 18px;
+  }
+  
+  /* styles for buttons within the header */
+  .header .buttons {
+	display: flex;
+	align-items: center;
+  }
+  
+  .header button {
+	background-color: #fff;
+	border: none;
+	border-radius: 10px;
+	color: #333;
+	cursor: pointer;
+  }
+  
+  /* styles for the main wrapper */
+  .wrapper {
+	display: grid;
+	height: 100vh; /* Updated to set the height to 100vh */
+	grid-template-columns: 70px 230px minmax(500px, 1fr);
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+	  "header header header"
+	  "sidebar content content"
+	  "footer footer footer";
+	background-color: #fff;
+	color: #fdceea;
+  }
+  
+  /* styles for the sidebar */
+  .sidebar {
+	grid-area: sidebar;
+	background-color: #ffd3e5;
+	padding: 10px;
+  }
+  
+  /* styles for items within the sidebar */
+  #sidebar .sideBarItem {
+	max-height: 50px;
+	max-width: 50px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  #sidebar .sideBarItem img {
+	max-height: 50px;
+	max-width: 50px;
+  }
+  
+  /* styles for the main content */
+  .content {
+	grid-area: content;
+	height: 95%;
+	padding: 10px;
+  }
+  
+  /* styles for buttons within the options section */
+  .options button {
+	background-color: #fff;
+	border: none;
+	border-radius: 10px;
+	color: #333;
+	cursor: pointer;
+  }
+  
+  /* styles for the footer */
+  .footer {
+	font-family: Arial, sans-serif;
+	border-top: 1px solid #ccc;
+	grid-area: footer;
+	background-color: #ff98cc;
+	color: #fff;
+	font-size: 18px;
+  }
+  
+  .footer .slider {
+	max-width: 50%;
+  }
+  
+  /* styles for the options section */
+  .options {
+	grid-area: content;
+	height: 1%;
+	background-color: #ffd3e5;
+	color: #fff;
+	font-size: 18px;
+  }
+  
+  /* common styles for options and footer */
+  .options,
+  .footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+  }
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- p5.js library -->
+    <script src="lib/p5.min.js"></script>
+
+    <!-- main sketch -->
+    <script src="sketch.js"></script>
+
+    <!-- added functions -->
+    <script src="toolbox.js"></script>
+    <script src="helperFunctions.js"></script>
+    <script src="functions/freehandTool.js"></script>
+    <script src="functions/lineToTool.js"></script>
+    <script src="functions/mirrorDrawTool.js"></script>
+    <script src="functions/sprayCanTool.js"></script>
+    <script src="functions/eraser.js"></script>
+    <script src="functions/starStampTool.js"></script>
+    <script src="functions/heartStampTool.js"></script>
+    <script src="functions/spirographTool.js"></script>
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">My Drawing App
+            <button id="clearButton">Clear</button>
+            <button id="saveImageButton">Save Image</button>
+        </div>
+        <div class="sidebar" id="sidebar"></div>
+        <div class="content" id="content"></div>
+        <div class="footer">
+            <div class="slider">brush width: <input type="range" min="1" max="50" value="10" class="slider" id="penRange"></div>
+            <div class="slider">spirograph angle: <input type="range" min="1" max="300" value="50" class="slider" id="radius1"></div>
+            <div>
+              ㅤbackground color: <input type="color" value="#ffffff" id="bgColour">
+            </div>
+            <div>
+              ㅤink color: <input type="color" id="penColour">
+            </div>
+        </div>
+        <div class="options"></div>
+    </div>
+</body>
+</html>
